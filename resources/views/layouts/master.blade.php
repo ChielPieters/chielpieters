@@ -50,22 +50,13 @@
                             <div class="logo">
                                 <a href="/"><img src="img/logo.png" class="logo_mq" alt="Logo"></a>
                             </div>
-                            <div class="topnav" id="myTopnav">
-                                <a href="/" class="active">Home</a>
-                                <a href="/muziek">Muziek</a>
-                                <a href="/photoshop">Photoshop</a>
-                                <a href="/unrealengine">Unreal Engine</a>
-                                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                                    <i class="fa fa-bars"></i>
-                                </a>
+                            <div class="main-menubar d-flex align-items-center">
+                                <nav class="">
+                                    <i class="fas fa-home" style="margin-right: -3%;"></i><a href="/">Home</a>
+                                    <i class="fas fa-music" style="margin-right: -3%;"></i><a href="/muziek">Muziek</a>
+                                    <i class="fas fa-paint-brush" style="margin-right: -3%;"></i><a href="/photoshop">Photoshop</a>
+                                </nav>
                             </div>
-                            {{--<div class="main-menubar d-flex align-items-center">--}}
-                                {{--<nav class="">--}}
-                                    {{--<i class="fas fa-home" style="margin-right: -3%;"></i><a href="/">Home</a>--}}
-                                    {{--<i class="fas fa-music" style="margin-right: -3%;"></i><a href="/muziek">Muziek</a>--}}
-                                    {{--<i class="fas fa-paint-brush" style="margin-right: -3%;"></i><a href="/photoshop">Photoshop</a>--}}
-                                {{--</nav>--}}
-                            {{--</div>--}}
                         </div>
                     </div>
                 </div>

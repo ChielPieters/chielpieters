@@ -5,22 +5,47 @@
 @stop
 
 @section('content')
-    <div class="container-fluid slider_placement">
-        <img src="img/musicslider.png" alt="face">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+                    <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/face.png">
+                            <div class="container">
+                                <div class="carousel-caption text-left">
+                                    <h1>ZPNDZ - Hawk</h1>
+                                    <p></p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-text">
+                        <div class="col-md-12 text-center">
+                            <h1></h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container-fluid" style="margin-top: 10%;">
+    <div class="container" style="margin-top: 10%;">
         <div class="row">
             <div class="col-md-6">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/pI1nhJgJ49c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore  et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea.
                     commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                 </p>
             </div>
             <div class="col-md-6">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/gs5avEMKbG4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <p>
-                   In deze video leg ik uit hoe een van mijn laatste tracks in elkaar zit.
+                    In deze video leg ik uit hoe een van mijn laatste tracks in elkaar zit.
                     Ik laat zien hoe mijn melodies zijn opgebouwd en alle componenten die ik heb gebruikt.
                 </p>
             </div>
@@ -54,14 +79,15 @@
                         <tr>
                             <div class="text_post">
                                 <h4>{{$data->name}}</h4>
-                                    {{$data->content}}
+                                {{$data->content}}
                                 <div class="date">{{$data->created_at}}</div>
                             </div>
-                        </tr></br>
+                        </tr>
+                        </br>
                     </div>
                 @endforeach
-                    <button onclick="PostFunction()">Try it</button>
-                    <p id="Show"></p>
+                <button onclick="PostFunction()">Try it</button>
+                <p id="Show"></p>
             </div>
         </div>
     </div>

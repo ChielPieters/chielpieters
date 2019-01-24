@@ -12,10 +12,6 @@
     z-index: 9;
 }
 
-.slider_placement{
-    margin-left: -379px;
-}
-
 .carousel-caption, .carousel-caption h2 {
     color: #fff;
     text-align: left;
@@ -134,9 +130,7 @@ footer{
 .gallery-area{
     background-color: #222;
     color: #fff;
-    width: 1903px;
     margin-bottom: -2%;
-    margin-left: -397px;;
 }
 
 .date{

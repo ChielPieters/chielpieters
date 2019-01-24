@@ -29,7 +29,7 @@
                     </div>
                     <div class="main-text">
                         <div class="col-md-12 text-center">
-                            <h1>Gerecht van de dag: Kippensoep!</h1>
+                            <h1></h1>
                         </div>
                     </div>
                 </div>
