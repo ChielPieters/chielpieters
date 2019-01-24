@@ -1,0 +1,49 @@
+body {
+	position: sticky;
+}
+
+.menu-bar {
+	cursor: pointer;
+	span {
+		color: $white;
+		font-size: 24px;
+	}
+}
+
+nav {
+	margin-right: 70px;
+	@include media-breakpoint-down (sm) {
+		margin-right: 0;
+		position: absolute;
+		right: 0;
+		top: 47px;
+		text-align: right;
+		padding: 20px 0;
+		z-index: 5;
+		background: $white;
+		a{
+			color:$primary-color!important;
+			&:hover{
+				color:$primary-color;
+			}			
+		}
+	}
+	@include transition();
+	 transform-origin: 100% 50%;
+	&.hide {
+		transform: scale(0);
+	}
+}
+
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+
